@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kamal Salitra | Data Analyst Portfolio</title>
+    
+        <!-- SEO Meta Tags -->
+    <meta name="description" content="Kamal Salitra – Data Analyst with 4+ years of experience in banking and financial analytics. Skilled in SQL, Python, Power BI, Tableau, and DAX.">
+    <meta name="keywords" content="Data Analyst, Banking Analytics, Financial Analytics, SQL, Python, Power BI, Tableau, DAX">
+    <meta name="author" content="Kamal Salitra">
+
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:title" content="Kamal Salitra | Data Analyst Portfolio">
+    <meta property="og:description" content="Data Analyst with 4+ years of experience in Banking & Financial Analytics, SQL, Python, Power BI, and Tableau.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kamal-analytics.netlify.app/">
+
+        <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div id="top"></div>
 
     <!-- Navigation -->
     <nav>
@@ -55,13 +72,23 @@
         <a href="assets/Kamal_Salitra_Resume.pdf" class="btn" download>
             Download Resume
         </a>
+        <div class="hero-links">
+    <a href="https://www.linkedin.com/in/kamal-sal" target="_blank" aria-label="LinkedIn">
+        <img src="assets/linkedin-icon.png" alt="LinkedIn">
+    </a>
+
+    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+        <img src="assets/github-icon.png" alt="GitHub">
+    </a>
+</div>
+
     </div>
 </header>
 
   
 
     <!-- About -->
-    <section id="about" class="container">
+   <section id="about" class="container animate-on-scroll">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <p>
@@ -77,11 +104,15 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="bg-light">
+    <section id="skills" class="bg-light animate-on-scroll">
+
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
-                <div class="skill-card">
+                
+               <div class="skill-card animate-card">
+
+                    
                     <h3>Programming</h3>
                     <p>SQL, Python</p>
                 </div>
@@ -102,7 +133,8 @@
     </section>
 
     <!-- Work Experience -->
-<section id="experience" class="container">
+<section id="experience" class="container animate-on-scroll">
+
     <h2 class="section-title">Work Experience</h2>
 
     <div style="margin-bottom: 40px;">
@@ -134,7 +166,8 @@
     </div>
 </section>
 <!-- Certifications -->
-<section id="certifications" class="bg-light">
+<section id="certifications" class="bg-light animate-on-scroll">
+
     <div class="container">
         <h2 class="section-title">Certifications</h2>
 
@@ -155,14 +188,35 @@
     </div>
 </section>
 
+    <!-- Education -->
+<section id="education" class="container animate-on-scroll">
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-block">
+        <h3>Master’s Degree in Business Analytics</h3>
+        <p><strong>University of Exeter Business School</strong></p>
+        <p>2024</p>
+    </div>
+</section>
+
     
 
     <!-- Projects -->
-    <section id="projects" class="container">
+  <section id="projects" class="container animate-on-scroll">
+
         <h2 class="section-title">Featured Projects</h2>
         <div class="project-grid">
 
-            <div class="project-card">
+           <div class="project-card animate-card">
+
+
+                <img 
+    src="assets/project-1.png" 
+    alt="Financial Portfolio Dashboard"
+    class="project-image"
+/>
+
                 <h3>Financial Portfolio Performance Dashboard</h3>
                 <span class="tags">Power BI, DAX, SQL</span>
                 <p>
@@ -173,6 +227,13 @@
             </div>
 
             <div class="project-card">
+
+                <img 
+    src="assets/project-1.png" 
+    alt="Financial Portfolio Dashboard"
+    class="project-image"
+/>
+
                 <h3>Customer Segmentation & Risk Analysis</h3>
                 <span class="tags">Python, SQL, EDA</span>
                 <p>
@@ -183,6 +244,14 @@
             </div>
 
             <div class="project-card">
+
+                <img 
+    src="assets/project-1.png" 
+    alt="Financial Portfolio Dashboard"
+    class="project-image"
+/>
+
+                
                 <h3>Banking KPI & Performance Dashboard</h3>
                 <span class="tags">Power BI, Excel</span>
                 <p>
@@ -196,7 +265,8 @@
     </section>
 
     <!-- Resume -->
-    <section id="resume" class="bg-light">
+    <section id="resume" class="bg-light animate-on-scroll">
+
         <div class="container text-center">
             <h2 class="section-title">Resume</h2>
             <p>
@@ -211,19 +281,69 @@
     </section>
 
     <!-- Contact -->
-    <footer id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-links">
-                <p>Email: <a href="mailto:jnv26kamal@gmail.com">jnv26kamal@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/kamal-sal" target="_blank">linkedin.com/in/kamal-sal</a></p>
-                <p>Phone: <a href="tel:+919302491389">+91 9302491389</a></p>
-            </div>
-            <p class="copyright">
-                &copy; 2024 Kamal Salitra. All Rights Reserved.
+<footer id="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+
+        <p>
+            Interested in working together or discussing data analytics opportunities?
+            Feel free to reach out using the form below.
+        </p>
+
+        <!-- Contact Form (Netlify) -->
+        <form 
+            name="contact"
+            method="POST"
+            data-netlify="true"
+        >
+            <input type="hidden" name="form-name" value="contact">
+
+            <p>
+                <input type="text" name="name" placeholder="Your Name" required>
             </p>
-        </div>
+
+            <p>
+                <input type="email" name="email" placeholder="Your Email" required>
+            </p>
+
+            <p>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            </p>
+
+            <p>
+                <button type="submit" class="btn">Send Message</button>
+            </p>
+        </form>
+
+        <br>
+
+        <!-- Direct Contact -->
+        <p>Email: <a href="mailto:jnv26kamal@gmail.com">jnv26kamal@gmail.com</a></p>
+
+        <p>
+            <a href="https://www.linkedin.com/in/kamal-sal" target="_blank">
+                <img src="assets/linkedin-icon.png" alt="LinkedIn" class="contact-icon">
+                LinkedIn
+            </a>
+        </p>
+
+        <p>Phone: <a href="tel:+919302491389">+91 9302491389</a></p>
+
+        <p class="copyright">
+            &copy; 2024 Kamal Salitra. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#top" class="scroll-top-btn" aria-label="Scroll to top">
+        ↑
+    </a>
+
+</body>
+</html>
 
 </body>
 </html>
