@@ -109,6 +109,14 @@ nav ul li a:hover {
     font-size: 1.1rem;
     color: #555;
 }
+.hero-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #3498db;
+}
 
 /* =====================
    Buttons
